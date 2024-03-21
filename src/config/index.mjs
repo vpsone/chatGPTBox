@@ -275,6 +275,7 @@ export const defaultConfig = {
     'divide',
     'code',
     'ask',
+    'fixGrammar',
   ],
   selectionToolsDesc: [
     'Explain',
@@ -286,6 +287,7 @@ export const defaultConfig = {
     'Divide Paragraphs',
     'Code Explain',
     'Ask',
+    'Fix Grammar',
   ],
   // importing configuration will result in gpt-3-encoder being packaged into the output file
   siteAdapters: [
