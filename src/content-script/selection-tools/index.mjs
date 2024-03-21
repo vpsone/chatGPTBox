@@ -8,6 +8,7 @@ import {
   Braces,
   Globe,
   ChatText,
+  ArrowRepeat,
 } from 'react-bootstrap-icons'
 import { getPreferredLanguage } from '../../config/language.mjs'
 
@@ -121,6 +122,15 @@ export const config = {
     label: 'Ask',
     genPrompt: createGenPrompt({
       message: 'Analyze the following content and express your opinion, or give your answer',
+      includeLanguagePrefix: true,
+    }),
+  },
+  fixGrammar: {
+    icon: <ArrowRepeat />,
+    label: 'Fix Grammar',
+    genPrompt: createGenPrompt({
+      message:
+        'Correct spelling, syntax, or grammar mistakes, do not make improvements.If the original text has no mistake, just output the original text and nothing else',
       includeLanguagePrefix: true,
     }),
   },
